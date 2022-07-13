@@ -1,0 +1,82 @@
+.header-bg {
+  background: #000;
+}
+
+.header {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.header-logo {
+  display: inline-block;
+  max-width: 6rem;
+  max-height: 6rem;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.header-nav a {
+  padding: 0.8rem 0;
+  color: rgba(255, 255, 255, 0.753);
+  position: relative;
+}
+
+.header-nav a:hover {
+  color: #fff;
+}
+
+.header-nav a::after {
+  content: "";
+  background-color: #A4133C ;
+  display: block;
+  height: 0.2rem;
+  width: 0rem;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+@media (max-width:800px) {
+  .header-nav {
+    gap: 1rem ;
+  }
+
+  .header-nav a {
+    color: #fff;
+    border: 0.2rem solid #a4133c;
+    text-align: center;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
+    transition: 0.2s;
+  }
+
+  .header-nav a:hover::after {
+    width: 0rem;
+  }
+}
+
+@media (max-width:500px) {
+  .header-menu {
+    gap: 2rem;
+    justify-content: center;
+  }
+}

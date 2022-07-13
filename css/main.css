@@ -1,0 +1,158 @@
+.main-bg {
+  background: #000;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.main-container-img {
+  max-width: 40rem;
+  padding-top: 3rem;
+}
+
+.main-conteudo {
+  padding-top: 15rem;
+  padding-left: 4rem;
+}
+
+.main-conteudo h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.main-conteudo h1::before {
+  content: "";
+  display: block;
+  background-color: #a4133cc0;
+  height: 5.3rem;
+  width: 0.6rem;
+  top: 1rem;
+  left: -1rem;
+  position: absolute;
+}
+
+.main-conteudo h1::after {
+  content: "";
+  display: block;
+  background-color: #a4133cc0;
+  height: 0.6rem;
+  width: 5.3rem;
+  top: 6.6rem;
+  left: 49.7rem;
+  position: absolute;
+}
+
+.main-conteudo h2 {
+  padding-top: 0.5rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.521);
+}
+
+.main-conteudo-contato {
+  padding-top: 3rem;
+  padding-left: 0.6rem;
+}
+
+.main-conteudo-contato-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-conteudo-contato-menu li {
+  position: relative;
+}
+
+.main-conteudo-contato-menu li > a {
+  font-weight: 700;
+  color: #111;
+  padding: 1rem 5rem 1rem 1rem;
+  background: #A4133C;
+  border-radius: 0.4rem;
+}
+
+.main-conteudo-contato-menu-logo {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  max-width: 2.5rem;
+}
+
+.main-conteudo-contato-menu a:hover {
+  background-color: #a4133cb9;
+}
+
+@media (max-width:1000px) {
+  .main-conteudo {
+    padding-top: 12rem;
+  }
+  .main-conteudo h1::after {
+    top: 14rem;
+    left: 22.2rem;
+  }
+}
+
+@media (max-width:800px) {
+  .main-conteudo h1 {
+    font-size: 5.4rem;
+  }
+
+  .main-conteudo h1::before {
+    height: 4.3rem;
+  }
+
+  .main-conteudo h1::after {
+    width: 4.3rem;
+    top: 11.8rem;
+    left: 19rem;
+  }
+
+  .main-conteudo h2 {
+    font-size: 2.2rem;
+  }
+
+  .main-container-img {
+    max-width: 30rem;
+    padding-top: 8rem;
+  }
+
+  .main-conteudo-contato-menu a {
+    font-size: 1.6rem;
+  }
+
+  .main-conteudo-contato-menu-logo {
+    top: 0.7rem;
+  }
+
+}
+
+@media (max-width:600px) {
+  .main-conteudo h1 {
+    max-width: 10ch;
+  }
+ 
+  .main-container-img {
+    display: none;
+  }
+}
+
+@media (max-width:500px) {
+  .main-conteudo {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width:400px) {
+  .main-conteudo {
+    padding-top: 4rem;
+    padding-left: 4rem;
+  }
+}
