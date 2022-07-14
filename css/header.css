@@ -41,7 +41,7 @@
 
 .header-nav a::after {
   content: "";
-  background-color: #A4133C ;
+  background-color: var(--cor-principal) ;
   display: block;
   height: 0.2rem;
   width: 0rem;
@@ -61,7 +61,7 @@
 
   .header-nav a {
     color: #fff;
-    border: 0.2rem solid #a4133c;
+    border: 0.2rem solid var(--cor-principal);
     text-align: center;
     border-radius: 0.4rem;
     font-size: 1.6rem;

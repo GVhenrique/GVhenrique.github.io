@@ -1,0 +1,33 @@
+.section-bg {
+  background-color: #111;
+}
+
+.section {
+  padding: 10rem 4rem;
+}
+
+.section h3 {
+  text-align: center;
+  color: #ea1744;
+  font-size: 6.4rem;
+}
+
+.section img{
+  max-width: 15rem;
+}
+
+@media (max-width:800px) {
+  .section h3 {
+    font-size: 5.4rem;
+  }
+}
+
+@media (max-width:600px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+
+  .section h3 {
+    font-size: 3.4rem;
+  }
+}

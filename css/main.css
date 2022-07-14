@@ -30,7 +30,7 @@
 .main-conteudo h1::before {
   content: "";
   display: block;
-  background-color: #a4133cc0;
+  background-color: #ea174586;
   height: 5.3rem;
   width: 0.6rem;
   top: 1rem;
@@ -41,7 +41,7 @@
 .main-conteudo h1::after {
   content: "";
   display: block;
-  background-color: #a4133cc0;
+  background-color: #ea174586;
   height: 0.6rem;
   width: 5.3rem;
   top: 6.6rem;
@@ -71,23 +71,25 @@
   position: relative;
 }
 
-.main-conteudo-contato-menu li > a {
+.main-conteudo-contato-menu a {
+  border: 0.2rem solid rgba(255, 255, 255, 0);
   font-weight: 700;
   color: #111;
   padding: 1rem 5rem 1rem 1rem;
-  background: #A4133C;
+  background: var(--cor-principal);
   border-radius: 0.4rem;
 }
 
 .main-conteudo-contato-menu-logo {
   position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
+  top: 1rem;
+  right: 1rem;
   max-width: 2.5rem;
 }
 
 .main-conteudo-contato-menu a:hover {
-  background-color: #a4133cb9;
+  border: 0.2rem solid #fff;
+  background-color: #ea1744;
 }
 
 @media (max-width:1000px) {
@@ -131,7 +133,6 @@
   .main-conteudo-contato-menu-logo {
     top: 0.7rem;
   }
-
 }
 
 @media (max-width:600px) {

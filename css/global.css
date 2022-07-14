@@ -2,6 +2,9 @@
   font-size: 62.5%; /* 1 rem = 10 px */
 
   --font:'Barlow Semi Condensed', sans-serif;
+
+  --cor-principal: #ea1744;
+  /* #a4133c */
 }
 
 * {
